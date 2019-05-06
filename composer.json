@@ -1,0 +1,13 @@
+{
+    "name": "davidknafo/whatsapp",
+    "description": "Send message or image to group whatsapp via whatsmate api",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "authors": [
+        {
+            "name": "David knafo",
+            "email": "davidkjimdo@gmail.com"
+        }
+    ]
+}
