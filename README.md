@@ -10,9 +10,9 @@ $ composer require davidknafo/whatsapp
 ### Usage
 
 ```php
-$instanceId   = your-instance-id;   (data provide from whatsmate)
-$clientId     = your-client-id;     (data provide from whatsmate)
-$clientSecret = your-client-secret; (data provide from whatsmate)
+$instanceId   = "YOUR_INSTANCE_ID_HERE";   (data provide from whatsmate)
+$clientId     = "YOUR_CLIENT_ID_HERE";     (data provide from whatsmate)
+$clientSecret = "YOUR_CLIENT_SECRET_HERE;  (data provide from whatsmate)
 
 $whatsapp = new Whatsapp($instanceId, $clientId, $clientSecret);
 ```
