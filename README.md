@@ -1,7 +1,7 @@
 # Whattsap API (via whatmate)
 
 Api for sending whattsap message/image/document to user or group
-
+(create an account in https://www.whatsmate.net/)
 
 ### Install 
 ```sh
