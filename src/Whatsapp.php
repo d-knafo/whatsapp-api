@@ -8,6 +8,7 @@ class Whatsapp
     protected $instance_id = null;
     protected $clientId = null;
     protected $clientSecret = null;
+    private $baseUrl = 'http://api.whatsmate.net/v3/';
 
 
     /**
@@ -136,14 +137,14 @@ class Whatsapp
 
         if ($isImage) {
             $postData['image'] = $textOrFile;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/group/image/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/group/image/message/' . $this->instance_id;
         } elseif ($isDocument) {
             $postData['document'] = $textOrFile;
             $postData['filename'] = $documentName;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/group/document/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/group/document/message/' . $this->instance_id;
         } else {
             $postData['message'] = $textOrFile;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/group/text/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/group/text/message/' . $this->instance_id;
         }
 
         $client = new \GuzzleHttp\Client(
@@ -183,14 +184,14 @@ class Whatsapp
         if ($isImage) {
             $postData['image'] = $textOrFile;
             $postData['caption'] = $documentName;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/single/image/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/single/image/message/' . $this->instance_id;
         } elseif ($isDocument) {
             $postData['document'] = $textOrFile;
             $postData['filename'] = $documentName;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/single/document/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/single/document/message/' . $this->instance_id;
         } else {
             $postData['message'] = $textOrFile;
-            $url = 'http://api.whatsmate.net/v3/whatsapp/single/text/message/' . $this->instance_id;
+            $url = $this->baseUrl .'whatsapp/single/text/message/' . $this->instance_id;
         }
 
         $client = new \GuzzleHttp\Client(
