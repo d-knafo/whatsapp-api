@@ -13,7 +13,7 @@ $ composer require davidknafo/whatsapp
 ```php
 $instanceId   = "YOUR_INSTANCE_ID_HERE";   (data provide from whatsmate)
 $clientId     = "YOUR_CLIENT_ID_HERE";     (data provide from whatsmate)
-$clientSecret = "YOUR_CLIENT_SECRET_HERE;  (data provide from whatsmate)
+$clientSecret = "YOUR_CLIENT_SECRET_HERE";  (data provide from whatsmate)
 
 $whatsapp = new Whatsapp($instanceId, $clientId, $clientSecret);
 ```
@@ -25,7 +25,7 @@ $whatsapp = new Whatsapp($instanceId, $clientId, $clientSecret);
 ```php
 $groupAdmin  = '9721234567';  (Specify the WhatsApp number of the group creator, including the country code)
 $groupName   = 'MY-GROUP';    (Specify the name of the group)
-$message     =  'this is a test message'; 
+$message     = 'this is a test message'; 
 
 $whatsapp->sendTextToGroup($groupAdmin, $groupName, $message);
 
@@ -36,7 +36,7 @@ $whatsapp->sendTextToGroup($groupAdmin, $groupName, $message);
 ```php
 $groupAdmin  = '9721234567';  (Specify the WhatsApp number of the group creator, including the country code)
 $groupName   = 'MY-GROUP';    (Specify the name of the group)
-$image       =  'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='; 
+$image       = 'iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg=='; 
 
 $whatsapp->sendTextToGroup($groupAdmin, $groupName, $image);
 ```
