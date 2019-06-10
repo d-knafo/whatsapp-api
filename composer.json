@@ -4,6 +4,11 @@
     "require": {
         "guzzlehttp/guzzle": "^6.3"
     },
+    "keywords": [
+        "whatsapp",
+        "whatsmate",
+        "whatsapp api",
+    ],
     "authors": [
         {
             "name": "David knafo",
